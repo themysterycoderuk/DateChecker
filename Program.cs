@@ -7,9 +7,10 @@ namespace DateChecker
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            showDates();
         }
 
-        private void showDates()
+        private static void showDates()
         {
             var dt1 = new DateTime(2020, 12, 5);
             var dt2 = new DateTime(2020, 4, 5);
