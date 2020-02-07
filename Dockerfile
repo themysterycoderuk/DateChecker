@@ -4,7 +4,8 @@ RUN apk add tzdata
 RUN cp /usr/share/zoneinfo/GB /etc/localtime
 RUN echo "GB" >  /etc/timezone
 RUN apk del tzdata
-
+RUN apk add --no-cache icu-libs
+ENV DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=false
 #RUN apk add --no-cache icu-libs
 
 #Copy in source code
